@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Froggy Jump 3D</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="game-container"></div>
+
+    <div id="ui-layer">
+        <div id="score-container">0</div>
+
+        <div id="start-screen" class="screen active">
+            <h1>Froggy Jump</h1>
+            <p>Haz clic o toca para saltar</p>
+            <button id="start-btn">JUGAR</button>
+        </div>
+
+        <div id="game-over-screen" class="screen hidden">
+            <h1>¡Al Agua!</h1>
+            <p id="final-score">Puntuación: 0</p>
+            <button id="restart-btn">JUGAR DE NUEVO</button>
+        </div>
+
+    </div>
+
+    <div id="footer">
+        Built with ❤️ and 🐸 by <a href="https://github.com/holasoymalva" target="_blank">holasoymalva</a>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
